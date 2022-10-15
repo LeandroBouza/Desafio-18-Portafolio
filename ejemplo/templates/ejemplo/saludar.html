@@ -7,6 +7,29 @@
     <title>Desafio Django</title>
 </head>
 <body>
-    Hola este es mi primer saludo desde un template!!
+
+    <h1>Hola este es mi primer saludo desde un template!!{{nombre}}, {{apellido}}</h1><br>
+
+    <p>Las Notas se pueden Clasificar de la siguiente manera, Azules para los aprobados, rojas para los desaprobados:</p>
+
+
+    {% for nota in notas %}
+
+        {% if nota > 5%}
+            <p style="color:blue">{{nota}}</p>
+        
+        {% else %}
+
+            <p style="Color:red">{{nota}}</p>
+        
+        {%endif%}
+
+    {% endfor %}
+
+    
+
+
+
+
 </body>
 </html>
