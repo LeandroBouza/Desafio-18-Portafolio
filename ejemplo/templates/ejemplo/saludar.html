@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio Django</title>
 </head>
-<body>
+<body style="background-color: cadetblue;">
 
-    <h1>Hola este es mi primer saludo desde un template!!{{nombre}}, {{apellido}}</h1><br>
+    <h1 style="color: whitesmoke; text-align: center; text-decoration: underline;">Hola este es mi primer saludo desde un template!!{{nombre}}, {{apellido}}</h1><br>
 
-    <p>Las Notas se pueden Clasificar de la siguiente manera, Azules para los aprobados, rojas para los desaprobados:</p>
-
-
+    <p style="color: whitesmoke;text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; text-decoration:underline;">Las Notas se pueden Clasificar de la siguiente manera, Azules para los aprobados, rojas para los desaprobados:</p>
+    
+    
     {% for nota in notas %}
 
         {% if nota > 5%}
@@ -27,9 +27,5 @@
     {% endfor %}
 
     
-
-
-
-
 </body>
 </html>
